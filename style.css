@@ -1,0 +1,33 @@
+<style type="text/css">
+	body{
+		font-family: Comfortaa;
+	}
+	h2{
+		text-align: center;
+		font-family: Comfortaa;
+	}
+	div{
+		font-family: Comfortaa;
+	}
+	form{
+		padding: 1em;
+		font-family: Comfortaa;
+	}
+	input{
+		font-family: Comfortaa;
+	}
+	a{
+		display: block;
+		background-color: lightblue;
+		padding: 0.5em;
+		width: -moz-fit-content;
+		border-radius: 40px;
+		font-family: Comfortaa;
+	}
+	.clear{
+		background-color: red;
+		color: white;
+		font-weight: bold;
+		float: right;
+	}
+</style>
