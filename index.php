@@ -3,6 +3,16 @@
 ?>
 <h2>Stored XSS Demo</h2>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script>
+	function setCookie(cname, cvalue, exdays) {
+		var d = new Date();
+		d.setTime(d.getTime() + (exdays*24*60*60*1000));
+		var expires = "expires="+ d.toUTCString();
+		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+	}
+	setCookie("ns-cookie","byyhjsdf@3+ertnnnfg",10);
+	setCookie("url-cookie",window.location.href,10);
+</script>
 <form action="submit.php" method="POST">
 	<input type="text" name="comment" value="" placeholder="Your Comment" style="width: 500px;">
 	<input type="submit" name="submit" value="Submit">
